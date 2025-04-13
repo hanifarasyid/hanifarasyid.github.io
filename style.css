@@ -7,9 +7,8 @@ body {
   background-size: cover;
 }
 
-/* === Navbar === */
 .navbar {
-  background: linear-gradient(to right, #cbeffd, #a6d1f2); /* Biru soft */
+  background: linear-gradient(to right, #cbeffd, #a6d1f2); 
   padding: 10px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #a6d1f2;
@@ -44,7 +43,7 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-/* Hover & Active effects */
+
 .navbar ul li a:hover,
 .navbar ul li a.active {
   background-color: #e3f2fd;
@@ -53,7 +52,6 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* Tambahan animasi glow halus saat hover */
 .navbar ul li a:hover::after {
   content: '✨';
   position: absolute;
@@ -68,11 +66,10 @@ html, body {
   to { opacity: 1; transform: scale(1.2); }
 }
 
-/* === Konten Utama === */
 .content {
   flex: 1;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8); /* Latar semi-putih untuk kontras teks */
+  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 10px;
   max-width: 1000px;
   margin: 0 auto;
@@ -96,7 +93,6 @@ html, body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* === Galeri === */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -110,16 +106,14 @@ html, body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* === Footer === */
 .footer {
-  background-color: #0d1b2a; /* Navy */
+  background-color: #0d1b2a; 
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
 }
 
-/* === Beranda === */
 #home {
   background: none;
   padding: 40px 20px;
@@ -130,17 +124,16 @@ html, body {
 
 
 #home .overlay {
-  background-color: rgba(255, 255, 255, 0.7); /* Putih transparan */
+  background-color: rgba(255, 255, 255, 0.7); 
   padding: 30px 20px;
   border-radius: 12px;
-  color: #0d47a1; /* Navy untuk kontras */
+  color: #0d47a1;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 700px;       /* Biar tidak terlalu lebar */
-  margin: 0 auto;          /* Untuk posisi tengah */
-  text-align: center;      /* Tengahkan teks */
-  line-height: 1.8;        /* Spasi antar baris biar enak dibaca */
-  backdrop-filter: none; /* Tambahkan efek blur */
-  
+  max-width: 700px;       
+  margin: 0 auto;         
+  text-align: center;    
+  line-height: 1.8;       
+  backdrop-filter: none;
 }
 body::before {
   content: "";
@@ -149,18 +142,18 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* tambahkan lapisan gelap */
+  background-color: rgba(0, 0, 0, 0.2); 
   z-index: -1;
 }
 
 
 #home img {
   width: 100%;
-  max-width: 500px; /* Batas maksimal lebar */
+  max-width: 500px; 
   height: auto;
   border-radius: 10px;
   display: block;
-  margin: 20px auto; /* Supaya di tengah */
+  margin: 20px auto; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 body::before {
